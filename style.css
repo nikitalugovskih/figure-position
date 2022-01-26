@@ -14,20 +14,51 @@
 
 .figure {
     position: relative;
-    width: 650px;
-    height: 650px;
+    width: 550px;
+    height: 550px;
 }
 
-.circle__one {
+.circle__one, .circle__two, .circle__three, .circle__four {
+    position: absolute;
+    z-index: 5;
     width: 30%;
     height: 30%;
     border-radius: 50%;
-    background: #ec220a;
-    position: absolute;
-    z-index: 5;
+    background: red;
 }
 
 .circle__one:hover {
-    background-color: black;
-    z-index: 15;
+    background-color:teal;
+    z-index: 6;
+}
+
+.circle__two {
+    left: 100%;
+    transform: translate(-100%, 0);
+}
+
+.circle__two:hover {
+    background-color:yellow;
+    z-index: 6;
+}
+
+.circle__three { 
+    top: 100%;
+    transform: translate(0, -100%);
+}
+
+.circle__three:hover {
+    background-color:orange;
+    z-index: 6;
+}
+
+.circle__four { 
+    top: 100%;
+    left: 100%;
+    transform: translate(-100%, -100%);
+}
+
+.circle__four:hover {
+    background-color:navy;
+    z-index: 6;
 }
