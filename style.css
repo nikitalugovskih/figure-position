@@ -3,3 +3,31 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    padding: 110px;
+    max-width: 1230px;
+    margin: 0px auto;
+}
+
+.figure {
+    position: relative;
+    width: 650px;
+    height: 650px;
+}
+
+.circle__one {
+    width: 30%;
+    height: 30%;
+    border-radius: 50%;
+    background: #ec220a;
+    position: absolute;
+    z-index: 5;
+}
+
+.circle__one:hover {
+    background-color: black;
+    z-index: 15;
+}
